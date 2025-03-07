@@ -17,6 +17,7 @@ gem "bootsnap", require: false
 gem "kamal", require: false
 gem "thruster", require: false
 # gem "image_processing", "~> 1.2"
+gem "rails-controller-testing"
 
 group :development, :test do
   gem "sqlite3", ">= 2.1"
