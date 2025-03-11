@@ -18,6 +18,7 @@ gem "kamal", require: false
 gem "thruster", require: false
 # gem "image_processing", "~> 1.2"
 gem "rails-controller-testing"
+gem "bootstrap_form"
 
 group :development, :test do
   gem "sqlite3", ">= 2.1"
