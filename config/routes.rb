@@ -8,4 +8,5 @@ Rails.application.routes.draw do
   post "/login", to: "sessions#create"
   delete "/logout", to: "sessions#destroy"
   resources :users
+  get "/test_log_out", to: "test#test_log_out"
 end

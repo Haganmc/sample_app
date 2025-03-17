@@ -17,7 +17,6 @@ gem "bootsnap", require: false
 gem "kamal", require: false
 gem "thruster", require: false
 # gem "image_processing", "~> 1.2"
-gem "rails-controller-testing"
 gem "bootstrap_form"
 
 group :development, :test do
@@ -34,4 +33,10 @@ end
 group :test do
   gem "capybara"
   gem "selenium-webdriver"
+  gem "webdrivers"
+  gem "rails-controller-testing"
+  gem "minitest"
+  gem "minitest-reporters"
+  gem "guard"
+  gem "guard-minitest"
 end
