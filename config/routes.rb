@@ -9,4 +9,5 @@ Rails.application.routes.draw do
   delete "/logout", to: "sessions#destroy"
   resources :users
   get "/test_log_out", to: "test#test_log_out"
+  resources :account_activations, only: [ :edit ]
 end
