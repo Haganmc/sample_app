@@ -18,6 +18,9 @@ gem "kamal", require: false
 gem "thruster", require: false
 # gem "image_processing", "~> 1.2"
 gem "bootstrap_form"
+gem "faker"
+gem "will_paginate", "3.3.1"
+gem "will_paginate-bootstrap5", "~> 0.2.4"
 
 group :development, :test do
   gem "sqlite3", ">= 2.1"
