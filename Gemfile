@@ -16,7 +16,7 @@ gem "solid_cable"
 gem "bootsnap", require: false
 gem "kamal", require: false
 gem "thruster", require: false
-# gem "image_processing", "~> 1.2"
+gem "image_processing", "~> 1.2"
 gem "bootstrap_form"
 gem "faker"
 gem "will_paginate", "3.3.1"
