@@ -8,6 +8,7 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find(params[:id])
+    @microposts = @user.microposts.paginate(page: params[:page])
   end
 
   def create
@@ -40,9 +41,13 @@ class UsersController < ApplicationController
   end
 
   def destroy
-    User.find(params[:id]).destroy
-    flash[:success] = "User deleted"
-    redirect_to users_url, status: :see_other
+    @user = User.find(params[:id])
+    @user.destroy
+
+    respond_to do |format|
+      format.turbo_stream # Handles Turbo-specific requests
+      format.html { redirect_to users_url, status: :see_other, flash: { success: "User deleted" } }
+    end
   end
 
   private

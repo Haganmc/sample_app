@@ -27,5 +27,7 @@ module SampleApp
     config.session_store :cookie_store, key: "_sample_app_session"
     config.middleware.use ActionDispatch::Cookies
     config.middleware.use config.session_store, config.session_options
+    config.action_view.form_with_generates_remote_forms = false
+    config.active_storage.variant_processor = :mini_magick
   end
 end
