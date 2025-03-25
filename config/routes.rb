@@ -13,4 +13,6 @@ Rails.application.routes.draw do
   get "/test_log_out", to: "test#test_log_out"
   resources :account_activations, only: [ :edit ]
   resources :password_resets, only: [ :new, :create, :edit, :update ]
+  resources :microposts, only: [ :create, :destroy ]
+  get "/microposts", to: "pages#home"
 end

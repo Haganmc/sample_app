@@ -16,11 +16,13 @@ gem "solid_cable"
 gem "bootsnap", require: false
 gem "kamal", require: false
 gem "thruster", require: false
-# gem "image_processing", "~> 1.2"
+gem "image_processing", "~> 1.2"
 gem "bootstrap_form"
 gem "faker"
 gem "will_paginate", "3.3.1"
 gem "will_paginate-bootstrap5", "~> 0.2.4"
+gem "active_storage_validations"
+gem "rails-ujs"
 
 group :development, :test do
   gem "sqlite3", ">= 2.1"
